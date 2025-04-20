@@ -78,12 +78,11 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
 
   // Login function
   const login = async (email: string, password: string): Promise<boolean> => {
-    // In a real app, you would call an API here
-    // For this demo, we'll simulate a successful login
+    
     try {
       dispatch({ type: 'SET_LOADING', payload: true });
       
-      // Simulate API call delay
+      
       await new Promise(resolve => setTimeout(resolve, 800));
       
       // Check for demo credentials
@@ -110,8 +109,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
 
   // Signup function
   const signup = async (email: string, password: string, name: string): Promise<boolean> => {
-    // In a real app, you would call an API here
-    // For this demo, we'll simulate a successful signup
+   
     try {
       dispatch({ type: 'SET_LOADING', payload: true });
       
